@@ -1,0 +1,28 @@
+<html>  
+<head>  
+    <title>Liste des anniversaires</title>  
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"> 
+</head>  
+<body>  
+    <h1>Liste des anniversaires</h1>  
+    <p>  
+        <button onclick="javascript:anniv_liste();">Générer la liste</button> 
+        <button onclick="javascript:localStorage.clear();">Supprimer</button> 
+    </p>  
+    <p>  
+        <br />Ajouter un anniversaire  
+        <br />Personne : <input type="text" id="anniv_personne" />  
+        <br />Date : <input type="text" id="anniv_date" />  
+        <br /><button onclick="javascript:anniv_ajout();">Ajouter</button> 
+    </p>  
+    <p id="anniv_liste" style="background-color:#DDD;">  
+ 
+    </p>  
+    <script type="text/javascript" src="static/js/anniversaire.js"></script> 
+    <script type="text/javascript">  
+        (function() {  
+           anniv_liste();  
+        })();  
+    </script>  
+</body>  
+</html>
